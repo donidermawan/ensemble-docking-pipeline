@@ -1150,59 +1150,6 @@ This should be adjusted according to the available CPU resources.
 
 ---
 
-# Suggested `.gitignore`
-
-Large docking outputs, temporary files, logs, and generated structures generally should not be committed to GitHub.
-
-A suggested `.gitignore` is:
-
-```gitignore
-# macOS
-.DS_Store
-
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# R
-.Rhistory
-.RData
-.Rproj.user/
-
-# Logs
-*.log
-logs/
-
-# Temporary files
-*.tmp
-*.bak
-
-# Docking outputs
-pdbqt/
-results/
-ensemble_results/
-ensemble_figures/
-
-# Failed processing records
-failed/
-
-# Generated Vina configurations
-vina_*.txt
-
-# Large molecular structure files
-*.pdbqt
-*.sdf
-
-# Optional large raw structures
-*.pdb
-```
-
-If specific receptor structures or example input files are intended to be part of the repository, remove their corresponding patterns from `.gitignore`.
-
----
-
 # Recommended Repository Organization
 
 For a clean GitHub repository, a more maintainable organization would be:
@@ -1385,4 +1332,5 @@ Users are responsible for validating the input structures, docking parameters, r
 
 Computational Biology / Bioinformatics / Structure-Based Drug Discovery
 
+GitHub: https://github.com/donidermawan
 ---
