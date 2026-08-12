@@ -1150,45 +1150,6 @@ This should be adjusted according to the available CPU resources.
 
 ---
 
-# Recommended Repository Organization
-
-For a clean GitHub repository, a more maintainable organization would be:
-
-```text
-Receptor-Ensemble-Docking-Pipeline/
-│
-├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── scripts/
-│   ├── prepare_ligands.sh
-│   ├── prepare_receptors.sh
-│   ├── redocking_rmsd.sh
-│   ├── generate_vina_configs.sh
-│   ├── ensemble_docking.sh
-│   └── receptor_ensemble_docking_visualization.R
-│
-├── configs/
-│   └── vina_*.txt
-│
-├── input/
-│   ├── ligands/
-│   └── receptors/
-│
-├── validation/
-│
-├── results/
-│
-├── figures/
-│
-└── docs/
-```
-
-This structure separates reusable scripts from input structures and generated results.
-
----
-
 # Example Minimal Usage
 
 After cloning the repository:
